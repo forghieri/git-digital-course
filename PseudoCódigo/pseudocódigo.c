@@ -6,15 +6,17 @@
 void consultarSaldo(){
 
      printf("\nSeu saldo eh de: %d\n", saldo);
-     system("pause");
+      system("pause");
+     
 }
 void deposito(){
         printf("\t\t\n DEPOSITO");
         printf("\n digite o valor a depositar: ");
         scanf("%d", & valor);
         saldo = saldo + valor;
-        printf("\nSeu saldo eh de %d", saldo);  
-        system("pause");
+        printf("\nSeu saldo eh de %d\n", saldo);  
+         system("pause");
+       
 }
 void saque (){
         printf("SAQUE\n");
@@ -25,15 +27,16 @@ void saque (){
             printf("\nQuaintia invalida");
             }
              else{
-            valor = saldo - valor;
-            printf("Seu saldo eh de %d",saldo);
-
+            saldo = saldo - valor;
+            printf("\nSeu saldo eh de %d\n",saldo);
+            
             }
+             system("pause");
 }
 void finalizar(){
 
     printf ("Fim do programa");
-    printf("Finalizando");
+    printf("\nFinalizando.....");
 }
 void menu (){
 
@@ -74,7 +77,7 @@ void menu (){
         system("pause");
         system ("cls");
             break;
-            system ("pause");
+          
         }
       }
 
@@ -82,7 +85,8 @@ void menu (){
 }
 
 int main (){
-
+      
+      
         menu();
         system("pause");
         return 0;
